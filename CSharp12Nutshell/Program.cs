@@ -13,6 +13,7 @@ using System.Numerics;
 using System.Linq.Expressions;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System;
 
 #region C# 12
 Console.WriteLine($"----------------------- C# 12 -----------------");
@@ -235,4 +236,188 @@ void Print(string name, [CallerArgumentExpression(nameof(name))] string expr = n
 // Output: $"{DateTime.Now} - test"
 #endregion
 
+#endregion
+
+#region C# 9
+#region Init-only setters
+SampleInitOnlySetters sampleInitOnlySetters = new SampleInitOnlySetters { Id = 1 };
+//sampleInitOnlySetters.Id = 5; //has error because id just can init
+#endregion
+
+#region Records
+SampleRecord record = new SampleRecord(1, "Mohammad");
+SampleRecord record2 = record with { Id = 2 };
+#endregion
+
+#region Pattern-matching improvements
+string GetWeightCategory(decimal bmi) => bmi switch
+{
+    < 18.5m => "underweight",
+    < 25m => "normal",
+    < 30m => "overweight",
+    _ => "obese"
+};
+
+Console.WriteLine(GetWeightCategory(12)); //underweight
+Console.WriteLine(GetWeightCategory(26)); //overweight
+
+bool IsVowel(char c) => c
+                            is 'a'
+                            or 'e'
+                            or 'i'
+                            or 'o'
+                            or 'u';
+bool IsLetter(char c) => c
+                            is >= 'a' and <= 'z'
+                            or >= 'A' and <= 'Z';
+#endregion
+
+#region Target-typed new expressions
+StringBuilder sb1 = new();
+StringBuilder sb2 = new("Test");
+#endregion
+#endregion
+
+#region C# 8
+
+#region Indices and ranges
+char[] vowels = new char[] { 'a', 'e', 'i', 'o', 'u' };
+char lastElement = vowels[^1];   // 'u'
+char secondToLast = vowels[^2];   // 'o'
+//Ranges let you “slice” an array by using the .. operator:
+
+char[] firstTwo = vowels[..2];    // 'a', 'e'
+char[] lastThree = vowels[2..];    // 'i', 'o', 'u'
+char[] middleOne = vowels[2..3];   // 'i'
+char[] lastTwo = vowels[^2..];   // 'o', 'u'
+
+Index last = ^1;
+Range firstTwoRange = 0..2;
+firstTwo = vowels[firstTwoRange];   // 'a', 'e'
+
+SampleIndicesAndRanges sampleIndicesAndRanges = new SampleIndicesAndRanges();
+Console.WriteLine(sampleIndicesAndRanges[^1]);
+#endregion
+
+#region Null-coalescing assignment
+string s = null;
+
+if (s == null) s = "Hello, world";
+s ??= "Hello, world";
+
+#endregion
+
+#region Using declarations
+if (File.Exists("file.txt"))
+{
+    //omit the brackets and statement block following a using statement
+    using var reader = File.OpenText("file.txt");
+    Console.WriteLine(reader.ReadLine());
+}
+
+#endregion
+
+#region Read-only members
+// look at csharp08.cs
+#endregion
+
+#region Default interface members
+// look at csharp08.cs
+
+#endregion
+
+#region Switch expressions
+int cardNumber = 11;
+string cardName = cardNumber switch    // assuming cardNumber is an int
+{
+    13 => "King",
+    12 => "Queen",
+    11 => "Jack",
+    _ => "Pip card"   // equivalent to 'default'
+};
+#endregion
+
+#region Tuple, positional, and property patterns
+
+int cardNo = 12; string suite = "spades";
+string cardTitle = (cardNo, suite) switch
+{
+    (13, "spades") => "King of spades",
+    (13, "clubs") => "King of clubs",
+    (12, "spades") => "Queen of spades",
+};
+
+Console.WriteLine(cardTitle);
+#endregion
+
+#region Nullable reference types
+#nullable enable    // Enable nullable reference types from this point on
+
+string s1 = null;   // Generates a compiler warning! (s1 is non-nullable)
+string? s2 = null;  // OK: s2 is nullable reference type
+
+#endregion
+
+#region Asynchronous streams
+// look at csharp08.sc
+
+#endregion
+#endregion
+
+#region C# 7
+#region Type patterns and pattern variables
+
+var o = new Object();
+switch (o)
+{
+    case int i:
+        Console.WriteLine("It's an int!");
+        break;
+    case string ss:
+        Console.WriteLine(ss.Length);    // We can use the s variable
+        break;
+    case bool b when b == true:        // Matches only when b is true
+        Console.WriteLine("True");
+        break;
+    case null:
+        Console.WriteLine("Nothing");
+        break;
+}
+#endregion
+
+#region Local methods
+void WriteCubes()
+{
+    Console.WriteLine(Cube(3));
+    Console.WriteLine(Cube(4));
+    Console.WriteLine(Cube(5));
+
+    int Cube(int value) => value * value * value;
+}
+#endregion
+
+#region More expression-bodied members
+var sampleMoreExpressionBodiedMembers = new SampleMoreExpressionBodiedMembers("Mohammad");
+#endregion
+
+#region Deconstructors
+
+var joe = new SampleMoreExpressionBodiedMembers("Joe Bloggs");
+var (first, seccond) = joe;          // Deconstruction
+Console.WriteLine(first);        // Joe
+Console.WriteLine(seccond);         // Bloggs
+
+#endregion
+
+#region Tuples
+var bob = ("Bob", 23);
+Console.WriteLine(bob.Item1);   // Bob
+Console.WriteLine(bob.Item2);   // 23
+
+var tuple = (name: "Bob", age: 23);
+Console.WriteLine(tuple.name);     // Bob
+Console.WriteLine(tuple.age);      // 23
+
+
+#endregion
 #endregion
