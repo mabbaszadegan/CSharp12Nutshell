@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp12Nutshell.Chapter03.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp12Nutshell.Chapter03.Inheritance", "CSharp12Nutshell.Chapter03.Inheritance\CSharp12Nutshell.Chapter03.Inheritance.csproj", "{17178AD5-4660-4B08-8441-57E06B64707A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp12Nutshell.Chapter03.Generics", "CSharp12Nutshell.Chapter03.Generics\CSharp12Nutshell.Chapter03.Generics.csproj", "{13052CFF-6A80-49CC-B8C4-FD24883C9CDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{17178AD5-4660-4B08-8441-57E06B64707A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17178AD5-4660-4B08-8441-57E06B64707A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17178AD5-4660-4B08-8441-57E06B64707A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13052CFF-6A80-49CC-B8C4-FD24883C9CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13052CFF-6A80-49CC-B8C4-FD24883C9CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13052CFF-6A80-49CC-B8C4-FD24883C9CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13052CFF-6A80-49CC-B8C4-FD24883C9CDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{98BDEB9A-525D-41BF-8239-DDEDBF30857A} = {7A0BB612-EAE9-4516-8A51-6577C40DBEEA}
 		{0291235F-354F-4AFC-B725-2FAD734698AB} = {2C43E3BD-E1D2-4931-8D80-C1F81FCDF6D7}
 		{17178AD5-4660-4B08-8441-57E06B64707A} = {2C43E3BD-E1D2-4931-8D80-C1F81FCDF6D7}
+		{13052CFF-6A80-49CC-B8C4-FD24883C9CDA} = {2C43E3BD-E1D2-4931-8D80-C1F81FCDF6D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ADADFC4F-71C6-40C6-9CA0-1E7BECE75C35}

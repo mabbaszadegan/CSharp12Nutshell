@@ -17,3 +17,5 @@ rect.Deconstruct(out var n);        // Deconstruction
 Console.WriteLine(n);    // test
 
 #endregion
+
+Console.WriteLine(BorderSides.TopBottom.ToString());
