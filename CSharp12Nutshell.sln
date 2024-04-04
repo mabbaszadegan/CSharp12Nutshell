@@ -13,11 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp12Nutshell.Chapter02.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 03", "Chapter 03", "{2C43E3BD-E1D2-4931-8D80-C1F81FCDF6D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp12Nutshell.Chapter03.Classes", "CSharp12Nutshell.Chapter03.Classes\CSharp12Nutshell.Chapter03.Classes.csproj", "{0291235F-354F-4AFC-B725-2FAD734698AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp12Nutshell.Chapter03.Classes", "CSharp12Nutshell.Chapter03.Classes\CSharp12Nutshell.Chapter03.Classes.csproj", "{0291235F-354F-4AFC-B725-2FAD734698AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp12Nutshell.Chapter03.Inheritance", "CSharp12Nutshell.Chapter03.Inheritance\CSharp12Nutshell.Chapter03.Inheritance.csproj", "{17178AD5-4660-4B08-8441-57E06B64707A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp12Nutshell.Chapter03.Inheritance", "CSharp12Nutshell.Chapter03.Inheritance\CSharp12Nutshell.Chapter03.Inheritance.csproj", "{17178AD5-4660-4B08-8441-57E06B64707A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp12Nutshell.Chapter03.Generics", "CSharp12Nutshell.Chapter03.Generics\CSharp12Nutshell.Chapter03.Generics.csproj", "{13052CFF-6A80-49CC-B8C4-FD24883C9CDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp12Nutshell.Chapter03.Generics", "CSharp12Nutshell.Chapter03.Generics\CSharp12Nutshell.Chapter03.Generics.csproj", "{13052CFF-6A80-49CC-B8C4-FD24883C9CDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 04", "Chapter 04", "{B9B412FA-C139-4009-9B49-B6454EE1C51D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp12Nutshell.Chapter04.Delegates", "CSharp12Nutshell.Chapter04.Delegates\CSharp12Nutshell.Chapter04.Delegates.csproj", "{05668C07-8E36-48C5-BBA1-DC2CDAA90DAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,10 @@ Global
 		{13052CFF-6A80-49CC-B8C4-FD24883C9CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13052CFF-6A80-49CC-B8C4-FD24883C9CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13052CFF-6A80-49CC-B8C4-FD24883C9CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05668C07-8E36-48C5-BBA1-DC2CDAA90DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05668C07-8E36-48C5-BBA1-DC2CDAA90DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05668C07-8E36-48C5-BBA1-DC2CDAA90DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05668C07-8E36-48C5-BBA1-DC2CDAA90DAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +63,7 @@ Global
 		{0291235F-354F-4AFC-B725-2FAD734698AB} = {2C43E3BD-E1D2-4931-8D80-C1F81FCDF6D7}
 		{17178AD5-4660-4B08-8441-57E06B64707A} = {2C43E3BD-E1D2-4931-8D80-C1F81FCDF6D7}
 		{13052CFF-6A80-49CC-B8C4-FD24883C9CDA} = {2C43E3BD-E1D2-4931-8D80-C1F81FCDF6D7}
+		{05668C07-8E36-48C5-BBA1-DC2CDAA90DAC} = {B9B412FA-C139-4009-9B49-B6454EE1C51D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ADADFC4F-71C6-40C6-9CA0-1E7BECE75C35}
