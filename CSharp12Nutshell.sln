@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp12Nutshell.Chapter04.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp12Nutshell.Chapter04.Patterns", "CSharp12Nutshell.Chapter04.Patterns\CSharp12Nutshell.Chapter04.Patterns.csproj", "{29623334-4165-4447-9530-FF9AD5443ECB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp12Nutshell.Chapter04.Attributes", "CSharp12Nutshell.Chapter04.Attributes\CSharp12Nutshell.Chapter04.Attributes.csproj", "{96FC7AE3-C7E3-48E2-BA46-2413B7C60CFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{29623334-4165-4447-9530-FF9AD5443ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29623334-4165-4447-9530-FF9AD5443ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29623334-4165-4447-9530-FF9AD5443ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96FC7AE3-C7E3-48E2-BA46-2413B7C60CFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96FC7AE3-C7E3-48E2-BA46-2413B7C60CFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96FC7AE3-C7E3-48E2-BA46-2413B7C60CFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96FC7AE3-C7E3-48E2-BA46-2413B7C60CFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{05668C07-8E36-48C5-BBA1-DC2CDAA90DAC} = {B9B412FA-C139-4009-9B49-B6454EE1C51D}
 		{EEE593E6-E89D-44F3-92A3-B9E3F4DCC8C3} = {B9B412FA-C139-4009-9B49-B6454EE1C51D}
 		{29623334-4165-4447-9530-FF9AD5443ECB} = {B9B412FA-C139-4009-9B49-B6454EE1C51D}
+		{96FC7AE3-C7E3-48E2-BA46-2413B7C60CFB} = {B9B412FA-C139-4009-9B49-B6454EE1C51D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ADADFC4F-71C6-40C6-9CA0-1E7BECE75C35}
