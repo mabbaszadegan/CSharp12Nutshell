@@ -1,5 +1,7 @@
 ﻿
+using CSharp12Nutshell.Chapter07.Collections;
 using System.Collections;
+using System.Collections.ObjectModel;
 using System.Text;
 
 #region IEnumerable and IEnumerator
@@ -150,3 +152,5 @@ Array.Resize(ref wholes, 5);
 Console.WriteLine(string.Join(",", wholes));  // { 1, 2, 2, 0, 0 }
 
 #endregion
+
+AnimalCollection animals = new AnimalCollection(new Zoo());
