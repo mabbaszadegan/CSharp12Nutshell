@@ -37,7 +37,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp12Nutshell.Chapter07.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp12Nutshell.Chapter07.ListAndQueue", "CSharp12Nutshell.Chapter07.ListAndQueue\CSharp12Nutshell.Chapter07.ListAndQueue.csproj", "{6ACE4ABB-F6EB-4A8E-83AF-3DCFAAE5D9ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp12Nutshell.Chapter07.Dictionaries", "CSharp12Nutshell.Chapter07.Dictionaries\CSharp12Nutshell.Chapter07.Dictionaries.csproj", "{612B91C8-5D97-40FA-9C51-75A29FD1370C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp12Nutshell.Chapter07.Dictionaries", "CSharp12Nutshell.Chapter07.Dictionaries\CSharp12Nutshell.Chapter07.Dictionaries.csproj", "{612B91C8-5D97-40FA-9C51-75A29FD1370C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter 08", "Chapter 08", "{51CEE2B0-09EE-464A-9A4A-B922D3E598C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp12Nutshell.Chapter08.EFCore", "CSharp12Nutshell.Chapter08.EFCore\CSharp12Nutshell.Chapter08.EFCore.csproj", "{8513BF8B-10E8-49E3-BA34-F581AC39A8E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +101,10 @@ Global
 		{612B91C8-5D97-40FA-9C51-75A29FD1370C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{612B91C8-5D97-40FA-9C51-75A29FD1370C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{612B91C8-5D97-40FA-9C51-75A29FD1370C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8513BF8B-10E8-49E3-BA34-F581AC39A8E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8513BF8B-10E8-49E3-BA34-F581AC39A8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8513BF8B-10E8-49E3-BA34-F581AC39A8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8513BF8B-10E8-49E3-BA34-F581AC39A8E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,6 +123,7 @@ Global
 		{0B921B4E-0003-4960-A1C4-2F01F338F6E3} = {58989403-958D-4D01-851F-1B229192F148}
 		{6ACE4ABB-F6EB-4A8E-83AF-3DCFAAE5D9ED} = {58989403-958D-4D01-851F-1B229192F148}
 		{612B91C8-5D97-40FA-9C51-75A29FD1370C} = {58989403-958D-4D01-851F-1B229192F148}
+		{8513BF8B-10E8-49E3-BA34-F581AC39A8E9} = {51CEE2B0-09EE-464A-9A4A-B922D3E598C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ADADFC4F-71C6-40C6-9CA0-1E7BECE75C35}
